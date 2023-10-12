@@ -3,7 +3,7 @@ const axios = require("axios");
 const fs = require("fs");
 
 // Replace 'YOUR_BOT_TOKEN' with your Telegram bot token.
-const token = "6334890983:AAGygNIp-1SSqkYYIB5AJ1O-gmVjiC_kEPU";
+const token = process.env.TELEGRAM_TOKEN;
 
 // Create a bot instance.
 const bot = new TelegramBot(token, { polling: true });
